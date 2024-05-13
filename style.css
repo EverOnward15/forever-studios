@@ -702,6 +702,10 @@ p {
   .scroll-to-top i {
     font-size: 16px;
   }
+
+  * {
+    max-width: 100dvw;
+  }
 }
 
 /*1440p+*/

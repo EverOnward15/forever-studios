@@ -428,7 +428,7 @@ p {
   /* Your styles for screen sizes between 500px and 768px */
 
   html {
-    scroll-snap-type: none;
+    scroll-snap-type: none !important;
   }
 
   .navbar-brand {
@@ -512,7 +512,7 @@ p {
 /*RESPONSIVE Small Screens <425px*/
 @media (max-width: 425px) {
   html {
-    scroll-snap-type: none;
+    scroll-snap-type: none !important;
   }
 
   .navbar-brand {
@@ -573,7 +573,6 @@ p {
     color: black;
     font-weight: bolder;
   }
-  
 
   .contact div {
     flex-wrap: wrap;
@@ -598,7 +597,7 @@ p {
 .contact-picture {
     margin-top: auto;
     max-height: 75dvh;
-
+    width: 100dvw;
 }
 
 
@@ -611,8 +610,6 @@ p {
   .scroll-to-top i {
     font-size: 16px;
   }
-
-
 }
 
 /*2k+*/

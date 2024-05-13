@@ -486,7 +486,7 @@ p {
   html {
     -ms-scroll-snap-type: none !important;
         scroll-snap-type: none !important;
-        scroll-snap-stop: none !important;
+        scroll-snap-stop: always !important;
   }
 
   .navbar-brand {
@@ -585,7 +585,7 @@ p {
   html {
     -ms-scroll-snap-type: none !important;
         scroll-snap-type: none !important;
-        scroll-snap-stop: none !important;
+        scroll-snap-stop: always !important;
   }
 
   .navbar-brand {

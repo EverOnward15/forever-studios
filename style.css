@@ -261,6 +261,13 @@ footer {
   scroll-snap-stop: normal;
 }
 
+.spring:hover,
+.summer:hover,
+.autumn:hover,
+.winter:hover {
+ cursor: pointer;
+}
+
 .showcase-container .row {
   padding: 0 40px;
 }

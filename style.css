@@ -73,7 +73,7 @@ footer {
     padding: 0;
 }
 
-.abel-regular {
+.fs {
   font-family: "Abel", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -489,7 +489,7 @@ p {
   }
 
   .navbar-brand {
-    text-align: center;
+    margin-right: auto;
   }
   #cta-top {
     padding: 2px;
@@ -579,16 +579,6 @@ p {
 
 }
 
-
-@media only screen and (min-width: 1000px) and (max-width: 1024px) {
-  .showcase-container {
-    min-width: 90dvw;
-  }
-  .showcase-container .row {
-    padding: 0px 0px;
-  }
-}
-
 /*RESPONSIVE Small Screens <425px*/
 @media (max-width: 500px) {
   html {
@@ -597,7 +587,7 @@ p {
   }
 
   .navbar-brand {
-    margin-left: auto; /* Adjust the padding as needed */
+    margin-left: 0; /* Adjust the padding as needed */
   }
   .title-text {
     font-size: 3rem;
@@ -704,7 +694,7 @@ p {
   }
 
   * {
-    max-width: 100dvw;
+    max-width: 100dvw; 
   }
 }
 
@@ -718,5 +708,19 @@ p {
 @media (min-width: 2500px) {
   .showcase-container {
     min-width: 90dvw;
+  }
+}
+
+/*Laptops 1024px */
+@media only screen and (min-width: 1000px) and (max-width: 1024px) {
+  .showcase-container {
+    min-width: 90dvw;
+  }
+  .showcase-container .row {
+    padding: 0px 0px;
+  }
+
+  #cta-top {
+    margin-top: 5px;
   }
 }

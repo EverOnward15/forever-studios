@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Photo</title>
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="./node_modules/lightgallery/css/lightgallery.css" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    </head>
+    <body>
+      <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                    <img src="./assets/infinity-svgrepo-com.svg" alt="Logo" width="30" height="auto" class="logo" > 
+                    <span class="abel-regular">Forever Studios</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item pt-2">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item pt-2">
+                    <a class="nav-link active" href="#about-section">About</a>
+                  </li>
+                  <li class="nav-item dropdown pt-2">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Portfolio
+                    </a>
+                    <ul class="dropdown-menu bg-dark">
+                      <li><a class="dropdown-item" href="#spring-section">Spring</a></li>
+                      <li><a class="dropdown-item" href="#summer-section">Summer</a></li>
+                      <li><a class="dropdown-item" href="#autumn-section">Autumn</a></li>
+                      <li><a class="dropdown-item" href="#winter-section">Winter</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a class="nav-link" href="#contact-section">
+                      <button class="btn btn-success me-2 d-inline-block" id="cta-top" type="button">Get in touch</button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <main>
+          <section class="hero">
+            <div class="hero-img-container">
+              <img src="./assets/pitons-view-st-lucia-SOUFRIEREWBR0920-3379a424b0bc4facab1cb62b99d50936.webp" alt="" class="hero-img">
+            </div>
+          <div class="container-fluid title-container">
+            <div class="row title-row">
+              <div class="col-lg-6 col d-flex align-items-center justify-content-center">
+                <div class="title">
+                  <h1 class="title-text">Forever <br> Memories</h1>
+                
+                  <p class="background-text">(Background: The Pitons, Soufriere, St. Lucia)</p>
+                </div>
+              </div>
+              <div class="col-lg-6 invis">
+              </div>
+            </div>
+            <div class="row title-row">
+              <div class="col-md-6 invis">
+              </div>
+              <div class="col-lg-6 col desc-col">
+                <div class="desc">
+                  <p>Landscape & Travel <br> Photography Agency</p>
+                  <a class="" href="#"><span class="">Book a Call</span></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          </section>
+
+          <section id="about-section" class="about">
+            <div class="hero-img-container">
+              <img class="hero-img about-img" src="./assets/photography.jpeg">
+              <div class="overlay">
+                <p> </p>
+              </div>
+            </div>
+            <div class="container about-container">
+              <div class="row">
+                <div class="col-lg-6m col">
+                  <div class="team-desc">
+                    <p class="team-para">
+                      We’re a small team of travel and landscape photographers.<br>
+                      <br>
+                      <br> 
+                      We've traveled extensively, photographing the world's most breathtaking views.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col">
+                  <div class="team-desc desc-2">
+                    <!-- <img src="./assets/team.jpeg">  -->
+                    <p class="team-para">
+                      Our journey began with a shared vision to showcase the wonders of nature through photography.<br> 
+                      <br>
+                      From majestic mountains to serene seascapes, our portfolio reflects our dedication to storytelling through images.</p>          
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <section id="spring-section" class="spring">
+            <div class="container showcase-container">
+              <div class="row row-1 d-flex">
+                <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                  <h2 class="showcase-title">Spring</h2>
+                </div>
+              </div>
+              <div class="row row-2" id="spring">
+                <div class="col-lg-4 gallery" data-src="./assets/keukenhof-netherlands.jpeg">
+                  <div class="showcase-box">
+                    <img src="./assets/keukenhof-netherlands.jpeg"> 
+                    <h3>Keukenhof, Netherlands</h3>
+                    <p>"World-famous tulip gardens in Lisse."</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 gallery" data-src="./assets/kanuma-sakura.jpeg">
+                  <div class="showcase-box">
+                    <img src="./assets/kanuma-sakura.jpeg"> 
+                    <h3>Kanuma, Japan</h3>
+                    <p>"Sakura trees in bloom."</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 gallery" data-src="./assets/livermore-ca-usa.jpeg">
+                  <div class="showcase-box">
+                    <img src="./assets/livermore-ca-usa.jpeg"> 
+                    <h3>Livermore</h3>
+                    <p>"First spring bloom in Livermore, CA."</p>
+                  </div>
+                </div>
+              </div>
+          </section>
+          
+          <section id="summer-section" class="summer">
+            <div class="container showcase-container">
+              <div class="row row-1 d-flex">
+                <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                  <h2 class="showcase-title">Summer</h2>
+                </div>
+              </div>
+              <div class="row row-2" id="summer">
+                <div class="col-lg-4 gallery" data-src="./assets/triglav-trenta-slovenia.jpeg">
+                  <div class="showcase-box">
+                    <img src="./assets/triglav-trenta-slovenia.jpeg"> 
+                    <h3>Triglav</h3>
+                    <p>"Tallest mountain in Slovenia."</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 gallery" data-src="./assets/maldives.jpeg">
+                  <div class="showcase-box">
+                    <img src="./assets/maldives.jpeg"> 
+                    <h3>Kudahuvadhoo</h3>
+                    <p>"A crystal-blue sea in the Maldives."</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 gallery" data-src="./assets/haselschacher-buck-vogtsburg.jpeg">
+                  <div class="showcase-box">
+                    <img src="./assets/haselschacher-buck-vogtsburg.jpeg"> 
+                    <h3>Haselschacher Buck</h3>
+                    <p>"Protected nature reserve in Germany."</p>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <section id="autumn-section" class="autumn">
+            <div class="container showcase-container">
+              <div class="row row-1 d-flex">
+                <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                  <h2 class="showcase-title">Autumn</h2>
+                </div>
+              </div>
+              <div class="row row-2" id="autumn">
+                <div class="col-lg-4 gallery" data-src="./assets/ridgeway-colorado.jpeg">
+                  <div class="showcase-box">
+                    <img src="./assets/ridgeway-colorado.jpeg"> 
+                    <h3>Ridgeway</h3>
+                    <p>"A small town in Colorado."</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 gallery" data-src="./assets/the-national-arboretum-uk.jpeg">
+                  <div class="showcase-box">
+                    <img src="./assets/the-national-arboretum-uk.jpeg"> 
+                    <h3>The National Arboretum</h3>
+                    <p>"A British National Remembrance site."</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 gallery" data-src="./assets/jackson-hole-us.jpeg">
+                  <div class="showcase-box">
+                    <img src="./assets/jackson-hole-us.jpeg"> 
+                    <h3>Jackson Hole</h3>
+                    <p>"A valley in Vyoming."</p>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <section id="winter-section" class="winter">
+            <div class="container showcase-container">
+              <div class="row row-1 d-flex">
+                <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                  <h2 class="showcase-title">Winter</h2>
+                </div>
+              </div>
+              <div class="row row-2" id="winter">
+                <div class="col-lg-4 gallery" data-src="./assets/adelies-antartica.jpeg">
+                  <div class="showcase-box">
+                    <img src="./assets/adelies-antartica.jpeg"> 
+                    <h3>Antartica</h3>
+                    <p>"A waddle of Adelies penguins."</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 gallery" data-src="./assets/lapland-sweden.jpeg">
+                  <div class="showcase-box">
+                    <img src="./assets/lapland-sweden.jpeg"> 
+                    <h3>Lapland</h3>
+                    <p>"A pale, wintry moon."</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 gallery" data-src="./assets/inian-islands-alaska.jpeg">
+                  <div class="showcase-box">
+                    <img src="./assets/inian-islands-alaska.jpeg"> 
+                    <h3>Alaska</h3>
+                    <p>"Inian islands and the sea."</p>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <section id="contact-section" class="contact">
+            <div class="container-fluid d-flex">
+                  <div class="contact-desc">
+                    <p class="book" bg-success>
+                      Book Our Services                   
+                    </p>
+
+                    <div class="wrap-division">
+                      <img class="arrow-right" src="./assets/right-arrow.png" alt="">
+                    </div>
+                    <div class="wrap-division">
+                      <a href="mailto:prath.bhoite15@gmail.com?subject=Are you available?" class="contact-cta bg-success">
+                        Contact us
+                      </a>
+                    </div>
+                    <div class="icons wrap-division">
+                      <img class="icon" src="./assets/linkedin.png" alt="">
+                      <img class="icon" src="./assets/facebook.png" alt="">
+                      <img class="icon" src="./assets/instagram.png" alt="">
+                      <img class="icon" src="./assets/twitter.png" alt="">
+                    </div>
+                    <div class="wrap-division email">
+                      <p>Email: <a class="email" href="mailto:prath.bhoite15@gmail.com? subject=Service inquiry">hello@foreverstudios.com</a></p>
+                    </div>
+                    <div class="wrap-division number">
+                      <p>Number: 123-456</p>
+                    </div>
+                  </div>
+                  <div class="contact-picture-div">
+                    <img class="contact-picture" src="./assets/camera.avif">
+                  </div>
+            </div>
+          </section>
+
+        </main>
+        <footer class=" bg-dark">
+          <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="copy">Copyright &copy; <span class="year" id="year"></span><a class="copyright" href="https://everonward15.github.io/Portfolio/" target="_blank">Prathamesh Satish Bhoite</a>| Made with
+                <i class="fa-solid fa-heart heart"></i> 
+                <a href="#" class="scroll-to-top bg-dark">
+                  <i class="fas fa-arrow-up"></i>
+                </a>                
+              </p>
+            </div>
+          </div>
+        </div>
+        </footer>
+        <script src="./node_modules/lightgallery/lightgallery.umd.js"></script>
+        <script src="./node_modules/lightgallery/plugins/zoom/lg-zoom.umd.js"></script>
+        <script src="./node_modules/lightgallery/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+      
+
+      </script>
+    </body>
+</html>
+
+<!-- <a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Stockio - Flaticon</a> -->

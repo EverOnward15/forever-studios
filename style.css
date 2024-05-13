@@ -590,7 +590,7 @@ p {
 }
 
 /*RESPONSIVE Small Screens <425px*/
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   html {
     -ms-scroll-snap-type: none !important;
         scroll-snap-type: none !important;

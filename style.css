@@ -316,9 +316,8 @@ footer {
 
 .showcase-box img {
   min-height: 68dvh;
-  height: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+     object-fit: cover !important;
 }
 
 .showcase-box h3,
@@ -785,4 +784,10 @@ p {
   #cta-top {
     margin-top: 5px;
   }
+}
+
+/*Problematic image */
+.lapland {
+  object-fit: cover !important;
+  min-height: 68dvh !important;
 }

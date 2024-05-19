@@ -316,6 +316,7 @@ footer {
 
 .showcase-box img {
   min-height: 68dvh;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }

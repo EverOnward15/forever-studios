@@ -639,6 +639,10 @@ p {
     height: 100dvh;
   }
 
+  .about-container .row {
+    padding-top: 50px;
+  }
+
   .team-desc {
     height: 100%;
     min-width: 90dvw;

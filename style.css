@@ -191,8 +191,8 @@ footer {
   height: 50%;
   opacity: 0.8;
   width: 50%;
-  margin-top: 45%;
-  margin-right: 10%;
+  margin-top: 38dvh;
+  margin-right: auto;
   text-align: center;
   padding: 5px;
   padding-top: 10px;
@@ -481,7 +481,6 @@ p {
 
 /*RESPONSIVE Small Screens >425px but <768px*/
 @media only screen and (min-width: 500px) and (max-width: 1024px) {
-  /* Your styles for screen sizes between 500px and 768px */
 
   html {
     -ms-scroll-snap-type: none !important;
@@ -519,25 +518,47 @@ p {
     min-height: 100dvh;
   }
 
-  .team-desc {
+  /* .team-desc {
     height: 100%;
     width: 100%;
-    margin-top: 60%;
+    margin-top: 60dvh;
     margin-right: none;
     text-align: center;
     padding: 5px;
     padding-top: 30px;
+  } */
+
+  .about-container .row {
+    /* padding-top: 150px; */
+    padding-top: auto;
+  }
+
+
+  .team-desc {
+    min-height: 100%;
+    width: 80dvw;
+    margin: 0;
+    padding: 110px 0;
+    background-color: transparent;
+    text-align: center;
+    font-size:x-large;
+    margin-left: 60px;
+    opacity: 0.9;
+    z-index: 10000;
   }
   
   .team-para  {
+    max-width: 100%;
+    padding: 0;
     padding-top: 10px;
     margin-top: 20px;
     padding-bottom: 0px;
     margin-bottom: -180px;
   }
   
-  .desc-2 {
-    margin-left: 0%;
+  .overlay {
+    background-color: black;
+    opacity: 0.8;
   }
 
   .showcase-container {
@@ -577,8 +598,8 @@ p {
         -o-object-fit: contain;
            object-fit: contain;
     }
-
 }
+
 
 /*RESPONSIVE Small Screens <425px*/
 @media (max-width: 500px) {
@@ -626,7 +647,7 @@ p {
     background-color: transparent;
     text-align: center;
     font-size: large;
-    margin-top: 100px;
+    margin-top: 90px;
     margin-bottom: -100px;
     margin-left: 5px;
     padding-left: 15px;
@@ -680,8 +701,9 @@ p {
 
 .contact-picture {
     margin-top: auto;
-    max-height: 90dvh;
+    max-height: 100dvh;
     width: 100dvw;
+    object-fit: cover;
 }
 
 
@@ -711,6 +733,34 @@ p {
   .showcase-container {
     min-width: 90dvw;
   }
+
+  .team-desc {
+    min-height: 100%;
+    min-width: 100%;
+    margin: auto 0;
+    padding: 10px 10px;
+    background-color: transparent;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+    z-index: 10000;
+    margin-top: 0;
+    font-size: 4rem;
+    margin-top: 20dvh;
+  }
+  
+  .team-para  {
+    padding: 0;
+    padding-bottom: 0px;
+    
+  }
+  
+  .overlay {
+    background-color: black;
+    opacity: 0.8;
+  }
+
 }
 
 /*Laptops 1024px */

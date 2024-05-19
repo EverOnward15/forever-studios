@@ -1,9 +1,17 @@
+// document.addEventListener('DOMContentLoaded', async function() {
+//     const response = await fetch('./netlify/functions/getLicenseKey');
+//     const data = await response.json();
+//     const licenseKey = data.licenseKey;
+// });
+// console.log(licenseKey);
+
 
 document.addEventListener('DOMContentLoaded', function() {
     lightGallery(document.getElementById('spring'), {
         selector: ".gallery",
         plugins: [lgZoom, lgThumbnail],
         speed: 500,
+        fullScreen: true, 
         licenseKey: 'your_license_key'
         // ... other settings
     });

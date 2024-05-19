@@ -607,7 +607,7 @@ p {
 
 /*RESPONSIVE Small Screens <425px*/
 @media (max-width: 600px) {
-  html {
+  * {
     -ms-scroll-snap-type: none !important;
         scroll-snap-type: none !important;
         scroll-snap-stop: always !important;
@@ -644,7 +644,7 @@ p {
   }
 
   .about-container .row {
-    padding-top: 12dvh;
+    padding-top: 25dvh;
   }
 
   .team-desc {
@@ -785,6 +785,13 @@ p {
   #cta-top {
     margin-top: 5px;
   }
+}
+
+@media only screen and (min-width: 315px) and (max-width: 330px) {
+
+.about-container .row {
+  padding-top: 12dvh;
+}
 }
 
 /*Problematic image */

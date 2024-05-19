@@ -657,7 +657,8 @@ p {
     font-size: large;
     margin-top: 90px;
     margin-bottom: -100px;
-    margin-left: 5px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 15px;
     background-color: yellowgreen;
     opacity: 0.8;

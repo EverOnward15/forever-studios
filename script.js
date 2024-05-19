@@ -65,4 +65,26 @@ window.addEventListener('scroll', function() {
       scrollButton.style.display = 'none';
     }
   });
+
+//Disable scroll snap for upward scrolling
+document.addEventListener('DOMContentLoaded', () => {
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', () => {
+        let st = window.scrollY || document.documentElement.scrollTop;
+
+        if (st > lastScrollTop) {
+            // Scrolling down
+            document.documentElement.style.scrollSnapType = 'y mandatory';
+            document.body.style.scrollSnapType = 'y mandatory';
+        } else {
+            // Scrolling up
+            document.documentElement.style.scrollSnapType = 'none';
+            document.body.style.scrollSnapType = 'none';
+        }
+
+        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+    }, false);
+});
+
   

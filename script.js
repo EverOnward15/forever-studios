@@ -88,3 +88,33 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
   
+// Function to enable pass-through scrolling for all elements
+function enablePassThroughScrollForAll() {
+    document.querySelectorAll('*').forEach(el => {
+        el.style.scrollSnapStop = 'normal';
+    });
+}
+
+// Function to restore scroll snap behavior for all elements
+function restoreScrollSnapForAll() {
+    document.querySelectorAll('*').forEach(el => {
+        el.style.scrollSnapStop = 'always';
+    });
+}
+
+// Event listener for navigation links
+document.querySelectorAll('a.nav-link').forEach(link => {
+    link.addEventListener('click', event => {
+        // Enable pass-through scrolling for all elements during navigation
+        enablePassThroughScrollForAll();
+
+        // Restore scroll snap behavior for all elements after a short delay (adjust as needed)
+        setTimeout(restoreScrollSnapForAll, 500); // 500 milliseconds delay
+    });
+});
+
+// Event listener for scroll behavior
+window.addEventListener('scroll', () => {
+    // Restore scroll snap behavior for all elements when the user starts scrolling again
+    restoreScrollSnapForAll();
+});

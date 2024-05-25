@@ -52,8 +52,8 @@ img {
 /*Scroll Snap*/
 
 html {
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: none !important;
+      scroll-snap-type: none !important;
 }
 
 section {
@@ -94,6 +94,15 @@ footer {
   min-height: 7dvh;
 }
 
+nav {
+  z-index: 999999 !important;
+  background: #fff; /* Ensure the navbar has a background */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
 .nav-item {
   margin-left: 15px;
 }
@@ -108,10 +117,10 @@ footer {
 }
 
 
-/*Hero (main) sections*/
-/* main {
-    margin-top: 7dvh;
-} */
+/* Add top padding to main content to avoid overlap with fixed navbar */
+main {
+  padding-top: 7dvh;
+}
 
 .hero-img-container {
   position: relative;

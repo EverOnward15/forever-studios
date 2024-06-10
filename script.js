@@ -15,8 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         speed: 500,
         fullScreen: true, 
         licenseKey: 'your_license_key',
-        zoomFromOrigin: true // Maintain aspect ratio when zoomed
-
+        zoomFromOrigin: true, // Maintain aspect ratio when zoomed
         // ... other settings
     });
 });

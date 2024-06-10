@@ -5,6 +5,8 @@
 // });
 // console.log(licenseKey);
 
+// const { default: lightGallery } = require("lightgallery");
+
 
 document.addEventListener('DOMContentLoaded', function() {
     lightGallery(document.getElementById('spring'), {
@@ -12,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
         plugins: [lgZoom, lgThumbnail],
         speed: 500,
         fullScreen: true, 
-        licenseKey: 'your_license_key'
+        licenseKey: 'your_license_key',
+        zoomFromOrigin: true // Maintain aspect ratio when zoomed
+
         // ... other settings
     });
 });
@@ -22,8 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
         selector: ".gallery",
         plugins: [lgZoom, lgThumbnail],
         speed: 500,
-        licenseKey: 'your_license_key'
+        licenseKey: 'your_license_key',
         // ... other settings
+        zoomFromOrigin: true // Maintain aspect ratio when zoomed
+
     });
 });
 
@@ -32,7 +38,9 @@ document.addEventListener('DOMContentLoaded', function() {
         selector: ".gallery",
         plugins: [lgZoom, lgThumbnail],
         speed: 500,
-        licenseKey: 'your_license_key'
+        licenseKey: 'your_license_key',
+        zoomFromOrigin: true // Maintain aspect ratio when zoomed
+
         // ... other settings
     });
 });
@@ -42,7 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
         selector: ".gallery",
         plugins: [lgZoom, lgThumbnail],
         speed: 500,
-        licenseKey: 'your_license_key'
+        licenseKey: 'your_license_key',
+        zoomFromOrigin: true // Maintain aspect ratio when zoomed
+
         // ... other settings
     });
 });
@@ -118,3 +128,10 @@ window.addEventListener('scroll', () => {
     // Restore scroll snap behavior for all elements when the user starts scrolling again
     restoreScrollSnapForAll();
 });
+
+const topScroll = document.getElementById("top-scroll");
+topScroll.addEventListener("click", e => {
+    const gallery = lightGallery();
+    gallery.closeGallery();
+})
+

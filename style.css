@@ -45,7 +45,7 @@ ol {
 }
 
 img {
-  max-width: 100%;
+  max-width: 100% !important;
   height: auto;
 }
 
@@ -157,6 +157,11 @@ main {
   line-height: 0.8;
   margin-top: 15%;
   font-weight: 500;
+  text-shadow: 2px 2px 2px black;
+}
+
+.background-text, .desc {
+  text-shadow: 2px 2px 2px black;
 }
 
 .title-row {
@@ -232,6 +237,8 @@ main {
 }
 
 /*Showcase photo sections*/
+
+
 
 .spring {
   /* background-color: yellowgreen; */
@@ -457,10 +464,11 @@ p {
     margin-top: -10px;
 }
 
-.copy {
+p.copy {
     color: aliceblue; 
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    margin-bottom: 0px !important;
 }
 
 .copyright {
@@ -473,6 +481,7 @@ p {
 }
 
 .scroll-to-top {
+  display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -484,7 +493,7 @@ p {
     line-height: 40px;
     -webkit-box-shadow: 0px 2px 5px #198754;
             box-shadow: 0px 2px 5px #198754;;
-    z-index: 9999;
+  
   }
   
   .scroll-to-top i {
@@ -808,3 +817,4 @@ p {
   object-fit: cover !important;
   min-height: 68dvh !important;
 }
+
